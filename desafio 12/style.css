@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+main{
+    margin: 10px;
+    padding: 10px;
+}
+
+body{
+    height: 100vh;
+}
+
+main > p{
+    padding: 40px;
+    max-width: 200px;
+}
+
+section > p{
+    padding: 40px;
+    max-width: 200px;
+}
+
+#sec_um{
+    background-image: url(imagens/background001.jpg);
+}
