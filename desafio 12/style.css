@@ -1,50 +1,65 @@
+@charset "UTF-8";
+
 *{
     margin: 0;
     padding: 0;
 }
+
+html, body{
+    min-height: 100vh;
+    background-color: darkgray;
+}
+
 header{
     background-color: black;
     color: white;
     text-align: center;
 }
 
-body{
-    height: 100vh;
+header > h1{
+    padding-top: 50px;
+    font-variant: small-caps;
 }
 
-main > p{
-    padding: 40px;
-    max-width: 200px;
+header > p{
+    padding-bottom: 50px;
 }
 
-section > p{
-    position: absolute;
-    padding: 5px;
-    max-width: 200px;
-
-    height: 80vh;
-
-    background-color: rgba(0, 0, 0, 0.264);
-
-    transform: translate(50px, 40px);
-
+a{
     color: white;
-    font-weight: bold;
-    font-size: 2em;
+    text-decoration: none;
+    font-weight: bolder;
 }
 
-#sec_um{
-    position: relative;
-    background: black url(imagens/background001.jpg) center center no-repeat fixed;
-    background-size: cover;
-
-    height: 90vh;
+a:hover{
+    text-decoration: underline;
 }
 
-#sec_dois{
-    position: relative;
-    background: black url(imagens/background002.jpg) center center no-repeat fixed;
-    background-size: cover;
+section{
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 30px;
+}
 
-    height: 90vh;
+section.normal{
+    background-color: white;
+    color: black;
+}
+
+section.imagem{
+    background-color: rgb(46, 46, 46);
+    color: white;
+}
+
+section.imagem > p{
+    width: 400px;
+    background-color: rgba(0, 0, 0, 0.353);
+}
+
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
 }
